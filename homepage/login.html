@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="design.css">
+    
+ 
+</head>
+<body>  
+<script>
+    function Login(){
+        var typeusername = "jamesbrylllore";
+        var typepassword = "james";
+        var correctusername = document.getElementById("username").value;
+        var correctpassword = document.getElementById ("password").value;
+        var notif = document.getElementById("notif");
+        if(typeusername==correctusername&&typepassword==correctpassword){
+            document.getElementById("notif").innerHTML="login success";
+            window.location="calc.html";
+           
+
+        }else{
+           // document.getElementById("notif").innerHTML="login failed";
+            //Location.href="new.html"
+            alert("try again!")
+            }
+        }
+    </script>
+    
+    <div class="container"> 
+    <h1 align="center" style="color: #04AA6D;"> LogIn</h1>
+    <input id="username" type="text" placeholder="Enter Email">
+    <input id="password" type="password" placeholder="Enter Password ">
+    <p>Not registered? <a href="index.html" style="color:blue; "> Create new Account</a></p>
+    
+       <button type="Login" style="text-decoration: none;"><a class="button" href="Portfolio.html">Login</a></button>
+       <p id="notif"></p>
+       <Label>
+    <input type="checkbox" checked="checked" name="Remember"> RememberMe
+</Label>
+        </div>
+   
+    
+    
+    </body>
+</html>
